@@ -1,0 +1,11 @@
+- name: Configure data disks
+  hosts: linux
+  become: yes
+  become_method: sudo
+  
+  roles:
+    - datadisk-n01610736
+    - profile-n01610736
+    - user-n01610736
+    - webserver-n01610736
+
